@@ -3,9 +3,9 @@
   "version": "2.0.0",
   "description": "personal website",
   "scripts": {
-    "build": "node_modules/.bin/webpack -p",
     "watch": "node_modules/.bin/webpack --watch",
-    "babel": "node_modules/.bin/babel src -d functions/src"
+    "babel": "node_modules/.bin/babel src -d functions/src",
+    "build": "node_modules/.bin/webpack -p && npm run babel"
   },
   "author": "Filip Garamvölgyi",
   "license": "ISC",

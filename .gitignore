@@ -115,3 +115,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Files built during build
+public/bundle.js
+functions/src/
