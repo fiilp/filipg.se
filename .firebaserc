@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "filipg-28759",
+    "test": "filipg-test-server"
+  }
+}
