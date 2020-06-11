@@ -16,4 +16,4 @@ install:
   - npm install -g firebase-tools
 
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  - firebase deploy --project filipg-test-server --token $FIREBASE_TOKEN
