@@ -17,12 +17,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build & npm run babel",
+    "build": "react-scripts build",
+    "build-all": "react-scripts build & npm run babel & npm run fun-html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "babel": "node_modules/.bin/babel src -d functions/src --ignore src/**/*.test.js,src/serviceWorker.js,src/setupTests.js",
-    "fun-html": "node funhtml.js",
-    "int-test": "npm run test a & q"
+    "fun-html": "node funhtml.js"
   },
   "eslintConfig": {
     "extends": "react-app"

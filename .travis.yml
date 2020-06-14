@@ -10,6 +10,7 @@ node_js:
 script:
   - npm install
   - npm run build
+  - npm run babel
   - npm run fun-html
   - npm test
   - cd functions
