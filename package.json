@@ -7,6 +7,9 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -14,9 +17,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build & npm run babel & npm run fun-html",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "babel": "node_modules/.bin/babel src -d functions/src --ignore src/**/*.test.js,src/serviceWorker.js,src/setupTests.js",
+    "fun-html": "node funhtml.js",
+    "int-test": "npm run test a & q"
   },
   "eslintConfig": {
     "extends": "react-app"

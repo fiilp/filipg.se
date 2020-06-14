@@ -119,6 +119,7 @@ dist
 # Files built during build
 public/bundle.js
 functions/src/
+functions/index.html
 
 # React build
 build/
