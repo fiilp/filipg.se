@@ -10,7 +10,8 @@ node_js:
 script:
   - npm install
   - npm run build
-  - npm run test --if-present
+  - npm run fun-html
+  - npm test
   - cd functions
   - npm install
 
