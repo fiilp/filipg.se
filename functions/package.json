@@ -6,7 +6,8 @@
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "test": "mocha"
   },
   "engines": {
     "node": "10"
@@ -19,7 +20,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
+    "firebase-functions-test": "^0.2.0",
+    "mocha": "^8.0.1"
   },
   "private": true
 }
