@@ -1,6 +1,7 @@
 const functions = require('firebase-functions');
 const React  = require('react');
-const {renderToString} = require('react-dom/server');
+const ReactDOMServer = require('react-dom/server');
+const {StaticRouter} = require("react-router-dom");
 const App  = require('./src/app');
 const express  = require('express');
 const app = express();
@@ -9,8 +10,14 @@ const path = require('path');
 
 
 app.get('**', (req, res) => {
+  const context = {};
   console.log('ssr used');
-  const html = renderToString(React.createElement(App.default));
+  const html = ReactDOMServer.renderToString(
+    React.createElement(
+      StaticRouter, {location: req.url, context: context},
+        React.createElement(App.default)
+    )
+  );
   fs.readFile(path.resolve('./index.html'), 'utf-8', (err, data) => {
     if(err){
       console.log(err);
