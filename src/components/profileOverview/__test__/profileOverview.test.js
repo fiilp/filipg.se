@@ -12,7 +12,7 @@ describe('Render tests (<ProfileOverview/>)', () =>{
     };
     beforeEach(() => render(<ProfileOverview
         name="Filip Garamvölgyi"
-        about="Utvecklare med intresse för serier och spel!"
+        about="Utvecklare med intresse för TV-serier, fotboll och spel!"
         personal={[
             {type: 'Ålder', data: calculateAge(new Date(1998, 10, 15))},
             {type: 'Email', data: 'filipgar@kth.se'},
