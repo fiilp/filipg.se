@@ -4,24 +4,20 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import LandingPage from './views/landingPage/landingPage';
+import './app.css';
+
 function App(){
     return (
         <div data-testid="app" className="App">
             <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={LandingPage} />
                 <Route path="/projekt" component={Projekt} />
             </Switch>
         </div>    
     );
 }; export default App;
 
-function Home(){
-    return (
-    <div>
-        <h1>Home</h1>
-        <Link to="/projekt">projekt</Link>
-    </div>);
-}
 function Projekt(){
     return (
     <div>

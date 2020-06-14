@@ -1,0 +1,118 @@
+.LandingPage {
+    background: rgb(36,123,160);
+    background: linear-gradient(180deg, rgba(36,123,160,1) 40%, rgb(245, 255, 248) 0%);
+}
+.LandingPage .HeaderMenu {
+    display: flex;
+    color: white;
+}
+.LandingPage .HeaderMenu h1{
+    margin-bottom: 0px;
+}
+.LandingPage .HeaderMenu h3{
+    margin-top: 8px;
+}
+.LandingPage .HeaderMenu header{
+    flex: 0.2;
+    padding-left: 10%;
+    font-size: larger;
+}
+.LandingPage .HeaderMenu nav{
+    flex: 0.8;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: calc(10% - 1em);
+}
+.LandingPage .HeaderMenu nav span{
+    margin: 1em;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+.LandingPage .HeaderMenu nav span:hover{
+    opacity: 0.7;
+}
+
+.LandingPage .ProfileOverview {
+    height: 400px;
+    max-width: 850px;
+    background-color: rgb(250, 254, 255);
+    box-shadow: 2px 6px 5px grey;
+    margin-top: 3em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.LandingPage .ProfileOverview img{
+    height: 400px;
+}
+.LandingPage .ProfileOverview > div:nth-of-type(2) {
+    width: calc(100% - 267.6px);
+    display: flex;
+    flex-direction: column;
+}
+.LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(1){
+    flex: 0.3;
+    margin-right: 2em;
+    border-bottom: 1px solid gray;
+    margin-left: 1em;
+}
+.LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(1) > * {
+    margin-left: 0.2em;
+}
+.LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(2){
+    flex: 0.6;
+    margin-left: 1em;
+}
+.LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(3){
+    flex: 0.2;
+    background-color: rgb(36,123,160);
+    width: 100%;
+}
+.LandingPage .ProfileOverview table {
+    padding-top: 0.5em;
+}
+.LandingPage .ProfileOverview th {
+    text-align: left;
+}
+.LandingPage .ProfileOverview td {
+    padding-left: 2em;
+}
+@media only screen and (max-width: 650px) {
+    .LandingPage .HeaderMenu {
+        flex-direction: column;
+        
+    }
+    .LandingPage .HeaderMenu h3 {
+        display: none;
+    }
+    .LandingPage .HeaderMenu header{
+        padding-left: 0;
+        text-align: center;
+    }
+    .LandingPage .HeaderMenu nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .LandingPage .ProfileOverview {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .LandingPage .ProfileOverview > div:nth-of-type(1){
+        overflow-y: hidden;
+        height: 300px;
+    }
+    .LandingPage .ProfileOverview > div:nth-of-type(2) {
+        width: auto;
+    }
+    .LandingPage .HeaderMenu nav span{
+        font-size: large;
+    }
+}

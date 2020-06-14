@@ -6,8 +6,10 @@ import LandingPage from '../landingPage';
 
 describe('Render tests (<LandingPage/>)', () =>{ 
     beforeEach(() => render(<LandingPage/>));
-
     test('renders landing page',()=>{
         expect(screen.getByTestId('landingPage')).toHaveClass('LandingPage');
+    });
+    test('contains correct components', ()=>{
+        expect(screen.getByTestId('headerMenu')).toBeTruthy();
     });
 });
