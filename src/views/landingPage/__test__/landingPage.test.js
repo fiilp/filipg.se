@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import LandingPage from '../../src/views/landingPage';
+import LandingPage from '../landingPage';
 
 describe('Render tests (<LandingPage/>)', () =>{ 
     beforeEach(() => render(<LandingPage/>));
