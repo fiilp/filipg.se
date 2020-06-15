@@ -4,6 +4,11 @@ import './landingPage.css';
 import ProfileOverview from '../../components/profileOverview/profileOverview';
 import AboutMe from '../aboutMe/aboutMe';
 
+const linkedin = 'https://img.icons8.com/ios/64/000000/linkedin.png';
+const github = 'https://img.icons8.com/ios/64/000000/github.png';
+const youtube = 'https://img.icons8.com/ios/64/000000/youtube.png';
+const email = 'https://img.icons8.com/ios/64/000000/send-mass-email.png';
+
 const LandingPage = () => {
     return (
         <div data-testid="landingPage" className="LandingPage">
@@ -23,9 +28,10 @@ const LandingPage = () => {
                         {type: '', data: 'Wincher - Chattsupport & Utvecklare'},
                     ]}
                     socials={[
-                        {link: "https://github.com/FilipKTH", img: "linkedinicon.png", social: "LinkedIn"},
-                        {link: "https://github.com/FilipKTH", img: "githubIcon.png", social: "GitHub"},
-                        {link: "https://github.com/FilipKTH", img: "youtubeIcon.png", social: "Youtube"},
+                        {link: "https://github.com/FilipKTH", img: linkedin, social: "LinkedIn"},
+                        {link: "https://github.com/FilipKTH", img: github, social: "GitHub"},
+                        {link: "mailto:filipgar@kth.se", img: email, social: "Email"},
+                        {link: "https://github.com/FilipKTH", img: youtube, social: "Youtube"},
                     ]}
                 />     
             </div> 
