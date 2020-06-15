@@ -13,7 +13,7 @@ function ContentBox(props){
     return (
         <div data-testid="contentBox" className="ContentBox">
             {imageSidebar(props.img)}
-            <div><ReactMarkdown source={props.markdown}/></div>
+            <div><ReactMarkdown escapeHtml={false} source={props.markdown}/></div>
         </div>
     )
 }; export default ContentBox;
