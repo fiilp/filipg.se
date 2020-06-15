@@ -2,6 +2,9 @@
     background: rgb(36,123,160);
     background: linear-gradient(180deg, rgba(36,123,160,1) 40%, rgb(245, 255, 248) 0%);
 }
+.LandingPage > div:nth-of-type(1) {
+    height: 100%;
+}
 .LandingPage .HeaderMenu {
     display: flex;
     color: white;
@@ -91,7 +94,8 @@
 .LandingPage .ProfileOverview td {
     padding-left: 2em;
 }
-@media only screen and (max-width: 650px) {
+
+@media only screen and (max-width: 700px) {
     .LandingPage .HeaderMenu {
         flex-direction: column;
         
@@ -109,8 +113,6 @@
         justify-content: center;
         padding-right: 0;
     }
-}
-@media only screen and (max-width: 700px) {
     .LandingPage .ProfileOverview {
         height: auto;
         flex-direction: column;

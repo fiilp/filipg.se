@@ -28,5 +28,9 @@ describe('Render tests (<ProfileOverview/>)', () =>{
      test('renders component', ()=>{
         expect(screen.getByTestId('profileOverview')).toBeTruthy();
      });
+     test('renders components based n props', ()=>{
+        expect(screen.getByTestId('personal').childElementCount).toBe(4);
+        expect(screen.getByTestId('socials').childElementCount).toBe(3);
+     });
 });
 

@@ -22,14 +22,14 @@ function ProfileOverview(props){
                 </div>
                 <div>
                     <table>
-                        <tbody>
+                        <tbody data-testid="personal">
                             {props.personal.map((e, i)=> (
                                 <tr key={i}><th>{e.type}</th><td>{e.data}</td></tr>
                             ))}
                         </tbody>
                     </table>
                 </div>
-                <div>
+                <div data-testid="socials">
                     {props.socials.map((e,i) => <a key={i} href={e.link}><img alt={e.social} src={e.img}/></a>)}
                 </div>
             </div>
