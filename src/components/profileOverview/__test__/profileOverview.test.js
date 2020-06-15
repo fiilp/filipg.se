@@ -12,12 +12,17 @@ describe('Render tests (<ProfileOverview/>)', () =>{
     };
     beforeEach(() => render(<ProfileOverview
         name="Filip Garamvölgyi"
-        about="Utvecklare med intresse för TV-serier, fotboll och spel!"
+        about="Intresse för utveckling sedan länge. Även stort fan av TV-serier, fotboll och spel."
         personal={[
             {type: 'Ålder', data: calculateAge(new Date(1998, 10, 15))},
             {type: 'Email', data: 'filipgar@kth.se'},
             {type: 'Yrke', data: 'Student - KTH, högskoleingengör i datateknik,'},
             {type: '', data: 'Wincher - Chattsupport & Utvecklare'},
+        ]}
+        socials={[
+            {link: "https://github.com/FilipKTH", img: "githubIcon.png", social: "GitHub"},
+            {link: "https://github.com/FilipKTH", img: "linkedinicon.png", social: "LinkedIn"},
+            {link: "https://github.com/FilipKTH", img: "youtubeIcon.png", social: "Youtube"},
         ]}
      />));
      test('renders component', ()=>{

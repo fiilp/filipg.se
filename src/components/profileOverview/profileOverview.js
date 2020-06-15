@@ -1,11 +1,13 @@
 import React from 'react';
 /**
  * Short presentation about a person, mainly contact information. 
- * @param {img}         props picture of person in overview 
- * @param {alt}         props alt text for picture
- * @param {name}        props name of person
- * @param {about}       props some overview information of the person
- * @param {personal}    props key value pair of contact info to be put in table
+ * @param {object}      props           contains attributes of the component
+ * @param {string}      props.img       picture of person in overview 
+ * @param {string}      props.alt       alt text for picture
+ * @param {string}      props.name      name of person
+ * @param {string}      props.about     some overview information of the person
+ * @param {string[]}    props.personal  key value pair of contact info to be put in table, {type, data}
+ * @param {string[]}    props.socials   key value pair of socials, {link, img, social}
  */
 function ProfileOverview(props){
     return (
@@ -28,7 +30,7 @@ function ProfileOverview(props){
                     </table>
                 </div>
                 <div>
-
+                    {props.socials.map((e,i) => <a key={i} href={e.link}><img alt={e.social} src={e.img}/></a>)}
                 </div>
             </div>
         </div>
