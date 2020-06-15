@@ -14,6 +14,9 @@ function App(){
                 <Route exact path="/" component={LandingPage} />
                 <Route path="/projekt" component={Projekt} />
             </Switch>
+            <footer>
+                <a rel="noopener noreferrer" href="https://icons8.com/icons/set/github">GitHub</a>, <a rel="noopener noreferrer" target="_blank" href="https://icons8.com/icons/set/linkedin">LinkedIn</a> and other icons by <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a>
+            </footer>
         </div>    
     );
 }; export default App;

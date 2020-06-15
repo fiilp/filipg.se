@@ -1,5 +1,8 @@
-html, body, #root, .App, .LandingPage{
+html, body, #root, .App{
   height: 100%;
+}
+.LandingPage {
+  min-height: 100%;
 }
 body {
   margin: 0;
@@ -14,4 +17,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+footer {
+  padding: 1em;
+  text-align: center;
+  background-color: #1D3557 ;
+  color: #F1FAEE;
+  margin-top: 2em;
+}
+footer a:link, a:visited {
+  text-decoration: none;
+  color: #F1FAEE;
 }
