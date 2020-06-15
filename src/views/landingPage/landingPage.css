@@ -1,13 +1,24 @@
 .LandingPage {
-    background: rgb(36,123,160);
-    background: linear-gradient(180deg, rgba(36,123,160,1) 40%, rgb(245, 255, 248) 0%);
+    background: #1D3557;
+    background: linear-gradient(180deg, #1D3557 40%, #F1FAEE 0%);
+}
+.LandingPage .AboutMe {
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #457B9D;
+    color: #F1FAEE;
+}
+.LandingPage .AboutMe > h2 {
+    text-align: center;
 }
 .LandingPage > div:nth-of-type(1) {
     height: 100%;
 }
 .LandingPage .HeaderMenu {
     display: flex;
-    color: white;
+    color: #F1FAEE;
 }
 .LandingPage .HeaderMenu h1{
     margin-bottom: 0px;
@@ -63,7 +74,7 @@
     margin-left: 1em;
 }
 .LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(1) h2{
-    color:rgb(36,123,160);
+    color:#457B9D;
 }
 .LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(1) > * {
     margin-left: 0.2em;
@@ -74,7 +85,7 @@
 }
 .LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(3){
     flex: 0.2;
-    background-color: rgb(36,123,160);
+    background-color: #457B9D;
     width: 100%;
     display: flex;
     align-items: center;

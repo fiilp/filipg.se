@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderMenu from '../../components/headerMenu/headerMenu';
 import './landingPage.css';
 import ProfileOverview from '../../components/profileOverview/profileOverview';
+import AboutMe from '../aboutMe/aboutMe';
 
 const LandingPage = () => {
     return (
@@ -28,6 +29,7 @@ const LandingPage = () => {
                     ]}
                 />     
             </div> 
+            <AboutMe/>
         </div>
     );
 }; export default LandingPage;
