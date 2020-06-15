@@ -6,7 +6,7 @@ import AboutMe from '../aboutMe/aboutMe';
 
 const linkedin = 'https://img.icons8.com/ios/64/000000/linkedin.png';
 const github = 'https://img.icons8.com/ios/64/000000/github.png';
-const youtube = 'https://img.icons8.com/ios/64/000000/youtube.png';
+//const youtube = 'https://img.icons8.com/ios/64/000000/youtube.png';
 const email = 'https://img.icons8.com/ios/64/000000/send-mass-email.png';
 
 const LandingPage = () => {
@@ -31,7 +31,6 @@ const LandingPage = () => {
                         {link: "https://github.com/FilipKTH", img: linkedin, social: "LinkedIn"},
                         {link: "https://github.com/FilipKTH", img: github, social: "GitHub"},
                         {link: "mailto:filipgar@kth.se", img: email, social: "Email"},
-                        {link: "https://github.com/FilipKTH", img: youtube, social: "Youtube"},
                     ]}
                 />     
             </div> 
