@@ -34,8 +34,15 @@
     display: flex;
     justify-content: center;
 }
+.AboutMe .ContentBox > div:nth-of-type(1){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .AboutMe .ContentBox > div:nth-of-type(2) {
-    margin: 0.2em;
+    flex: 1;
+    margin: 1em;
 }
 .AboutMe table {
     border-spacing: 0;
@@ -51,14 +58,7 @@
 .AboutMe > div:nth-of-type(even) .ContentBox {
     flex-direction: row-reverse;
 }
-.AboutMe .ContentBox > div:nth-of-type(1){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.AboutMe .ContentBox > div:nth-of-type(1){
-    margin: 2em;
-}
+
 
 @media only screen and (max-width: 700px) {
     .AboutMe > div:nth-of-type(even) .ContentBox,
