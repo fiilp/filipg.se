@@ -13,14 +13,13 @@
 }
 .AboutMe table {
     color: black;
-    min-width: 350px;
 }
 .AboutMe table tr {
     background-color: #fff;
     border-top: 1px solid #c6cbd1;
 }
 .AboutMe table tr:nth-child(2n) {
-        background-color: #f6f8fa;
+    background-color: #f6f8fa;
 }
 
 .AboutMe table th {
@@ -87,8 +86,13 @@
     .AboutMe  tr > td:nth-child(n+4){
         display: none;
     }
+    .AboutMe .ContentBox > div:nth-of-type(2) {
+        margin-left: 0;
+    }
+    .AboutMe .ContentBox h3 {
+        padding-left: 0.3em;
+    }
 }
-
 @media only screen and (max-width: 350px) {
     .AboutMe  tr > th:nth-child(1),
     .AboutMe  tr > td:nth-child(1){
