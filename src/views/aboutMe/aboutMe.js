@@ -31,8 +31,8 @@ function AboutMe(props){
                     ### Språkkunskapar <br>
                     * Svenska - kan skriva och tala
                     * Engelska - kan skriva och tala
-                    * Tyska - Kan tala
-                    * Ungerska - Kan förstå"
+                    * Tyska - kan tala
+                    * Ungerska - kan förstå"
                 />
             </div>
         </div>
