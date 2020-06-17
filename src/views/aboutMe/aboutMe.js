@@ -24,9 +24,8 @@ Just nu testar jag framförallt olika tekniker i JavaScript. Den här hemsidan b
                 <h2>Kunskaper & Erfarenheter</h2>
                 <ContentBox
                     img={{alt: 'Utveckling med lugnande dryck.', src: './wurk.png'}}
-                    markdown="\n### Utbildning  \nTyp | Plats | Utbildning | L\xE4ngd\n--- | --- | --- | ---\nH\xF6gskola | KTH, Stockholm | Datateknik | 2018 -\nH\xF6gskola | BTH, Blekinge | Software Engineering | 2017 - 2018\nGymnasial | NTI-gymnasiet, Odenplan | Informations- och mediateknik | 2014 - 2017\n### Spr\xE5kkunskapar\n* Svenska - kan skriva och tala\n* Engelska - kan skriva och tala\n* Tyska - kan tala\n* Ungerska - kan f\xF6rst\xE5"
-/*{`
-### Utbildning  
+                    markdown={
+`### Utbildning  
 Typ | Plats | Utbildning | Längd
 --- | --- | --- | ---
 Högskola | KTH, Stockholm | Datateknik | 2018 -
@@ -36,8 +35,7 @@ Gymnasial | NTI-gymnasiet, Odenplan | Informations- och mediateknik | 2014 - 201
 * Svenska - kan skriva och tala
 * Engelska - kan skriva och tala
 * Tyska - kan tala
-* Ungerska - kan förstå`
-}*/
+* Ungerska - kan förstå`}
                 />
             </div>
         </div>
