@@ -6,7 +6,7 @@ import AboutMe from '../aboutMe/aboutMe';
 
 const linkedin = 'https://img.icons8.com/ios/64/000000/linkedin.png';
 const github = 'https://img.icons8.com/ios/64/000000/github.png';
-//const youtube = 'https://img.icons8.com/ios/64/000000/youtube.png';
+// const youtube = 'https://img.icons8.com/ios/64/000000/youtube.png';
 const email = 'https://img.icons8.com/ios/64/000000/send-mass-email.png';
 
 const LandingPage = () => {
@@ -28,7 +28,7 @@ const LandingPage = () => {
                         {type: '', data: 'Wincher - Chattsupport & Utvecklare'},
                     ]}
                     socials={[
-                        {link: "https://github.com/FilipKTH", img: linkedin, social: "LinkedIn"},
+                        {link: "https://www.linkedin.com/in/filip-garamv%C3%B6lgyi-817247158/", img: linkedin, social: "LinkedIn"},
                         {link: "https://github.com/FilipKTH", img: github, social: "GitHub"},
                         {link: "mailto:filipgar@kth.se", img: email, social: "Email"},
                     ]}

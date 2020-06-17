@@ -1,6 +1,6 @@
 .LandingPage {
     background: #1D3557;
-    background: linear-gradient(180deg, #1D3557 30%, #F1FAEE 0%);
+    background: linear-gradient(180deg, #1D3557 25%, #F1FAEE 0%);
 }
 .LandingPage .AboutMe {
     margin-top: 0.5em;
@@ -9,11 +9,6 @@
     margin-right: auto;
     background-color: #457B9D;
     color: #F1FAEE;
-}
-.LandingPage .AboutMe .ContentBox:nth-of-type(1) img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 .LandingPage .AboutMe > h2 {
     text-align: center;
@@ -57,7 +52,7 @@
     height: 400px;
     max-width: 930px;
     background-color: rgb(250, 254, 255);
-    box-shadow: 2px 6px 5px grey;
+    box-shadow: 2px 6px 5px rgb(29, 29, 29);
     margin-top: 3em;
     width: 90%;
     margin-left: auto;
@@ -87,6 +82,7 @@
 .LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(2){
     flex: 0.6;
     margin-left: 1em;
+    padding: 1em;
 }
 .LandingPage .ProfileOverview > div:nth-of-type(2) > div:nth-of-type(3){
     flex: 0.2;
