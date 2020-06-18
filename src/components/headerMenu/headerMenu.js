@@ -8,7 +8,9 @@ function HeaderMenu(props){
                 <h3 data-testid="subheader">{props.subheader}</h3>
             </header>
             <nav>
-                {props.content.reverse().map((e, i) => <span key={i}>{e}</span>)}
+                {props.content.map((e, i) => 
+                    <span onClick={() => props.navigateFunc(i)} key={i}>{e}</span>
+                ).reverse()}
             </nav>
         </div>
     )

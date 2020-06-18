@@ -10,13 +10,32 @@ const github = 'https://img.icons8.com/ios/64/000000/github.png';
 const email = 'https://img.icons8.com/ios/64/000000/send-mass-email.png';
 
 const LandingPage = () => {
+    let start = React.createRef();
+    let omMig = React.createRef();
+    let projekt = React.createRef();
+    //let kontaktaMig = React.createRef();
+    const toStart = () => start.current.scrollIntoView({behavior: 'smooth'});
+    const scrollTo = (area) => {
+        switch(area){
+            case 0: 
+                omMig.current.scrollIntoView({behavior: 'smooth'});
+            break;
+            case 1: 
+                projekt.current.scrollIntoView({behavior: 'smooth'});
+            break;
+            default: toStart(); break;
+        }
+    }
+
+
     return (
         <div data-testid="landingPage" className="LandingPage">
-            <div>   
+            <div ref={start}>   
                 <HeaderMenu 
                     header="Filip G" 
                     subheader="utvecklare med erfarenhet inom: JS, Java, C# och mer!" 
                     content={['Om mig', 'Projekt', 'Kontakta mig']}
+                    navigateFunc={scrollTo}
                 />
                 <ProfileOverview
                     name="Filip Garamvölgyi"
@@ -34,7 +53,10 @@ const LandingPage = () => {
                     ]}
                 />     
             </div> 
-            <AboutMe/>
+            <AboutMe 
+                ref={omMig}
+                toStartFun={toStart}
+            />
         </div>
     );
 }; export default LandingPage;

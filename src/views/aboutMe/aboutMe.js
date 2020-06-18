@@ -32,16 +32,17 @@ Tobii Dynavox | Översättning (engelska till svenska), publicering av nya varor
 Spel & Sånt | Kundservice, DVD-slipning, publicering av nya varor på hemsidan | 2013
 Konsum | Placering av varor, städ och inventering | 2012
 `;
-
-function AboutMe(props){
+//TODO: Split Make AboutMe to a view using the div > h2, div > content box as props 
+const AboutMe = React.forwardRef((props, ref) => {
+    
     return (
-        <div data-testid="aboutMe" className="AboutMe">
+        <div ref={ref} data-testid="aboutMe" className="AboutMe">
             <div>
             <h2>Om mig</h2>
-                <ContentBox
-                    img={{alt: 'Figur på utvecklare.', src: './profil2.png'}}
-                    markdown={text1()}
-                />
+            <ContentBox
+                img={{alt: 'Figur på utvecklare.', src: './profil2.png'}}
+                markdown={text1()}
+            />
             </div>
             <div>
                 <h2>Utbildning</h2>
@@ -57,6 +58,9 @@ function AboutMe(props){
                     markdown={text3()}
                 />
             </div>
+            <div className="backToBtn">
+                <button onClick={props.toStartFun}>Tillbaka till topppen</button>
+            </div>
         </div>
     )
-}; export default AboutMe;
+}); export default AboutMe;

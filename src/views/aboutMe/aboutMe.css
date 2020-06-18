@@ -3,6 +3,25 @@
     padding-bottom: 1em;
     text-align: center;
 }
+.AboutMe .backToBtn {
+    padding: 0.8em;
+}
+.AboutMe .backToBtn button {
+    border: none;
+    color: #F1FAEE;
+    border-radius: 1em;
+    font-weight: bolder;
+    display: block;
+    background-color: #E63946;
+    padding: 1em;
+    margin: 0 auto 0 auto;
+    width: 155px;
+    text-align: center;
+}
+.AboutMe .backToBtn button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
 .AboutMe p {
     font-weight: 400;
     padding-left: 5vh;
