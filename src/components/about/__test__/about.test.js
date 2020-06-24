@@ -1,4 +1,4 @@
 import canRenderComponent from "../../../../testHelper/testHelper";
 import About from "../about";
 
-canRenderComponent(<About/>);
+canRenderComponent(About, {contents: [{markdown: ''}]});

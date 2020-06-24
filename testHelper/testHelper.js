@@ -11,7 +11,8 @@ import '@testing-library/jest-dom/extend-expect';
  * @param {object} props            Potential props needed to render component
  */
 const canRenderComponent = (Comp, props) => {
-    describe(`Render tests (<${Comp.name}/>`, () =>{ 
+    render(<Comp {...props}/>)
+    describe(`Render tests (<${Comp.name}/>)`, () =>{ 
         test('renders component', ()=>{
             expect(screen.getByTestId(Comp.name.replace(/./, l=>l.toLowerCase()))).toBeTruthy();
         });

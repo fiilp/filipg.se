@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentBox from '../../components/contentBox/contentBox';
 import './aboutMe.css';
+import About from '../../components/about/about';
 
 const text1 = () =>
 `Under min gymnasietid studerade jag informations- och mediateknik med intriktning spelutveckling på NTI-Gymnasiet
@@ -32,35 +32,36 @@ Tobii Dynavox | Översättning (engelska till svenska), publicering av nya varor
 Spel & Sånt | Kundservice, DVD-slipning, publicering av nya varor på hemsidan | 2013
 Konsum | Placering av varor, städ och inventering | 2012
 `;
-//TODO: Split Make AboutMe to a view using the div > h2, div > content box as props 
-const AboutMe = React.forwardRef((props, ref) => {
-    
+
+const placeholderUntilAPI = [
+    {
+        header: 'Om mig',
+        contents: [{
+            img: {alt: 'Figur på utvecklare.', src: './profil2.png'},
+            markdown: text1()
+        }]
+    },
+    {
+        header: 'Utbildning',
+        contents: [{
+            img: {alt: 'Utveckling med lugnande dryck.', src: './skola.png'},
+            markdown: text2()
+        }]
+    },
+    {
+        header: 'Erfarenheter',
+        contents: [{
+            img: {alt: 'Utveckling med lugnande dryck.', src: './wurk.png'},
+            markdown: text3()
+        }]
+    }
+];
+const AboutMe = React.forwardRef((props, ref) => {   
     return (
         <div ref={ref} data-testid="aboutMe" className="AboutMe">
-            <div>
-            <h2>Om mig</h2>
-            <ContentBox
-                img={{alt: 'Figur på utvecklare.', src: './profil2.png'}}
-                markdown={text1()}
-            />
-            </div>
-            <div>
-                <h2>Utbildning</h2>
-                <ContentBox
-                    img={{alt: 'Utveckling med lugnande dryck.', src: './skola.png'}}
-                    markdown={text2()}
-                />
-            </div>
-            <div>
-                <h2>Erfarenheter</h2>
-                <ContentBox
-                    img={{alt: 'Utveckling med lugnande dryck.', src: './wurk.png'}}
-                    markdown={text3()}
-                />
-            </div>
-            <div className="backToBtn">
-                <button onClick={props.toStartFun}>Tillbaka till topppen</button>
-            </div>
+            {placeholderUntilAPI.map((e,i) =>
+                <About key={i} {...e} />
+            )}
         </div>
     )
 }); export default AboutMe;
